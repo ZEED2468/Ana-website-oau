@@ -1,11 +1,12 @@
 import React from 'react'
+import Navbar from './components/Navbar'
+import Hero from './sections/Hero';
 
 const App = () => {
   return (
     <>
-      <h1 className="text-3xl font-bold underline text-red-500 bg-blue-500">
-        Hello world!
-      </h1>
+      <Navbar />
+      <Hero />
     </>
   )
 }
