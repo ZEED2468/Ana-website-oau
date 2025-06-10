@@ -12,7 +12,7 @@ const Navbar = () => {
             className="flex justify-between items-center cursor-pointer"
           >
             <div className="flex items-center">
-              <img src="/ana.svg" alt="analogo" />
+              <img src="/ana-website-logo.svg" alt="analogo" />
               <img src="/oau.svg" alt="oaulogo" />
             </div>
             <div className="flex flex-col gap-0 text-[11.23px] md:text-base special-font">
