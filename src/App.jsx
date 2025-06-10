@@ -5,6 +5,7 @@ import Highlights from './sections/Highlights';
 import Expectations from './sections/Expectations';
 import Sponsors from './sections/Sponsors';
 import BookStand from './sections/BookStand';
+import FAQS from './sections/FAQ';
 
 const App = () => {
   return (
@@ -14,7 +15,8 @@ const App = () => {
       <Highlights />
       <Expectations />
       <Sponsors />
-      <BookStand />
+      <FAQS />
+      {/* <BookStand /> */}
     </>
   )
 }
