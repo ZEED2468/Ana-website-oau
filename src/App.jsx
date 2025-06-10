@@ -4,6 +4,7 @@ import Hero from './sections/Hero';
 import Highlights from './sections/Highlights';
 import Expectations from './sections/Expectations';
 import Sponsors from './sections/Sponsors';
+import BookStand from './sections/BookStand';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Highlights />
       <Expectations />
       <Sponsors />
+      <BookStand />
     </>
   )
 }
