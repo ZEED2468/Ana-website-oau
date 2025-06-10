@@ -5,17 +5,17 @@ const Navbar = () => {
   const navLists = ["Guests", "Sponsors", "FAQ", "Contact Us"];
   return (
     <>
-      <nav className="bg-red-300 p-5 px-2 md:px-28 text-white">
+      <nav className="bg-[#072422] p-5 px-2 md:px-20 lg:px-28 text-white">
         <div className="flex justify-between items-center">
           <a
             href="/"
-            className="flex justify-between items-center gap-4 cursor-pointer"
+            className="flex justify-between items-center cursor-pointer"
           >
             <div className="flex items-center">
-              <img src="/react.svg" alt="churchlogo" />
-              <img src="/react.svg" alt="oaulogo" />
+              <img src="/ana.svg" alt="analogo" />
+              <img src="/oau.svg" alt="oaulogo" />
             </div>
-            <div className="flex flex-col gap-0 text-[11.23px] md:text-base">
+            <div className="flex flex-col gap-0 text-[11.23px] md:text-base special-font">
               <p className="font-bold text-[9.5px] md:text-base">
                 ASSOCIATION OF NIGERIAN AUTHORS
               </p>
@@ -34,7 +34,7 @@ const Navbar = () => {
             <div
               className={`${
                 menu ? "hidden" : "flex"
-              } mt-2 w-full justify-end cursor-pointer`}
+              } mt-2 w-full justify-end cursor-pointer transition duration-300`}
               onClick={() => setMenu((prev) => !prev)}
             >
               <img
@@ -46,13 +46,15 @@ const Navbar = () => {
             <ul
               className={`${
                 menu ? "text-white hidden" : "text-red-500 block"
-              } md:flex items-center gap-7 list-none text-white`}
+              } lg:flex items-center gap-7 list-none text-white transition duration-300`}
             >
               {navLists.map((item, index) => {
                 return (
                   <li
                     key={index}
-                    className={`${menu ? "text-white" : "text-red-500 mt-6"}`}
+                    className={`${
+                      menu ? "text-white" : "text-black mt-6"
+                    } special-font`}
                   >
                     {item}
                   </li>
@@ -62,7 +64,7 @@ const Navbar = () => {
           </div>
           <button
             onClick={() => setMenu((prev) => !prev)}
-            className="text-red-500 block md:hidden"
+            className="text-red-500 block lg:hidden"
           >
             {menu && (
               <img
