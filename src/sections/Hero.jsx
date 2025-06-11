@@ -3,11 +3,27 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="bg-[#072422]">
-      <div className="p-10 text-center">
-        <h1 className="text-3xl font-bold text-wrap special-font text-white">
+      <div className="flex justify-around gap-7 items-center py-10">
+        <div>
+          <img
+            src="/Ticket-top1.svg"
+            alt="hero-bg"
+            className="w-48 h-26 object-cover"
+          />
+        </div>
+        <div>
+          <img
+            src="/Ticket-top2.svg"
+            alt="hero-bg"
+            className="w-48 h-26 object-cover"
+          />
+        </div>
+      </div>
+      <div className="p-[1rem_2.5rem] text-center">
+        <h1 className="text-3xl lg:text-[3.257rem] md:w-[31.75rem] font-bold mx-auto special-font leading-[3.25rem] text-white">
           ANA-OAU BOOK AND ARTS FESTIVAL
         </h1>
-        <p className="text-lg text-wrap text-white">
+        <p className="text-lg text-wrap text-[0.875rem] md:text-[1.125rem] text-white mt-7 md:w-[26.75rem] mx-auto">
           Celebrating the language of today's student artists—through books,
           music, paint & performance.
         </p>
@@ -31,6 +47,33 @@ const Hero = () => {
             </button>
           </a>
         </div>
+        <div className="flex justify-center mt-10">
+          <img src="/new-tongue.svg" alt="new-tongues" />
+        </div>
+        <div>
+          <div className="flex justify-center mt-10">
+            <img src="/group-tongues.svg" alt="new-tongues" />
+          </div>
+          <p className="text-white mt-2 text-[0.6875rem] md:text-[1rem]">
+            More than 200 People have bought tickets
+          </p>
+        </div>
+        <div className="flex justify-around gap-7 items-center py-10">
+        <div>
+          <img
+            src="/Ticket-bottom1.svg"
+            alt="hero-bg"
+            className="w-48 h-26 object-cover"
+          />
+        </div>
+        <div>
+          <img
+            src="/Ticket-bottom2.svg"
+            alt="hero-bg"
+            className="w-48 h-26 object-cover"
+          />
+        </div>
+      </div>
       </div>
     </div>
   );

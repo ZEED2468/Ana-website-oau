@@ -5,7 +5,10 @@ import Highlights from './sections/Highlights';
 import Expectations from './sections/Expectations';
 import Sponsors from './sections/Sponsors';
 import BookStand from './sections/BookStand';
-import FAQS from './sections/FAQ';
+import Faq from './sections/Faq';
+import Tickets from './sections/Tickets';
+import Footer from './components/Footer';
+import Guests from './sections/Guests';
 
 const App = () => {
   return (
@@ -14,9 +17,12 @@ const App = () => {
       <Hero />
       <Highlights />
       <Expectations />
+      <Guests />
       <Sponsors />
-      <FAQS />
-      {/* <BookStand /> */}
+      <Faq />
+      <BookStand />
+      <Tickets />
+      <Footer />
     </>
   )
 }

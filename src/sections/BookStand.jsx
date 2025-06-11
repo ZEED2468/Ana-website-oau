@@ -2,7 +2,7 @@ import React from "react";
 
 const BookStand = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-between items-center lg:rounded-[1.5rem] lg:border lg:border-[#B9BBC6] bg-[#C2EEF2] lg:m-5 lg:p-[6.5rem_7.5rem]">
+    <div className="flex flex-col lg:flex-row justify-between items-center lg:rounded-[1.5rem] lg:border lg:border-[#B9BBC6] bg-[#C2EEF2] lg:m-10 lg:p-[6.5rem_7.5rem]">
       <div className="flex flex-col gap-5 flex-start w-full px-5 pt-14 pb-4 lg:w-auto lg:px-0 lg:py-0 text-center lg:text-left">
         <h1 className="text-3xl font-bold special-font lg:max-w-[22.8125rem] text-[#1E1F24]">
           Book a Stand

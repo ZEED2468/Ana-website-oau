@@ -28,7 +28,7 @@ const Navbar = () => {
             className={`${
               menu
                 ? "bg-transparent"
-                : "bg-white absolute right-0 top-0 w-full h-full p-5"
+                : "bg-white fixed z-[999] right-0 top-0 w-full h-full p-5"
             }`}
           >
             <div
