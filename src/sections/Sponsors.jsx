@@ -2,8 +2,8 @@ import React from "react";
 
 const Sponsors = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-between items-center p-[4.5rem_1.5rem;] lg:p[4.5rem_1.49975rem_3.5rem_2.5rem] lg:p-[6.5rem_7.49975rem_6.5rem_7.5rem] gap[2.5rem] lg:gap-[11.70363rem]">
-      <div className="flex flex-col gap-5 flex-start">
+    <div className="flex flex-col lg:flex-row justify-between items-start p-[4.5rem_1.5rem;] lg:p[4.5rem_1.49975rem_3.5rem_2.5rem] lg:p-[6.5rem_7.49975rem_6.5rem_7.5rem] gap[2.5rem] lg:gap-[11.70363rem]">
+      <div className="flex flex-col gap-5 flex-start items-start">
         <h1 className="text-3xl font-bold special-font lg:w-[22.8125rem]">
           Our Sponsors & Partners
         </h1>
@@ -21,33 +21,33 @@ const Sponsors = () => {
           </button>
         </a>
       </div>
-      <div className="grid grid-cols-4 p-5 gap-10">
-        <div className="rounded p-[3.9375rem_0rem] bg-[#FCFCD7]">
+      <div className="grid grid-cols-4 grid-rows-3 mt-10 gap-2 lg:gap-5 w-full h-[38rem] justify-center mx-auto">
+        <div className="rounded p-[3.9375rem_0rem] bg-[#FCFCD7] col-span-2 row-span-2 flex justify-center items-center">
           <img
             src="/bookbuzz.svg"
             alt="bookbuzz_foundation"
-            className="block w-full h-full object-cover"
+            className="w-40 h-10"
           />
         </div>
-        <div className="rounded p-[5.8125rem_2.8865rem_5.8125rem_2.824rem] bg-[#FCF2E8] col-span-2">
+        <div className="rounded p-[5.8125rem_2.8865rem_5.8125rem_2.824rem] bg-[#FCF2E8] row-span-1 col-span-2 flex justify-center items-center">
           <img
             src="/spur.svg"
             alt="the_spur_hub"
-            className="block w-full h-full object-cover"
+            className="w-24 h-12"
           />
         </div>
-        <div className="col-span-3 rounded p-[0rem_2.5rem] bg-[#FCF2FC]">
-          <img
-            src="/Ujesa.svg"
-            alt="Ujesa_tribe"
-            className="block w-full h-full object-cover rounded-[50%] p-[0.31825rem_0.3335rem_0.30288rem_0.33394rem]"
-          />
-        </div>
-        <div className="col-span-3 rounded p[2.6875rem_0rem] bg-[#EDFAE6]">
+        <div className="rounded p[2.6875rem_0rem] bg-[#EDFAE6] col-span-2 row-span-2 flex justify-center items-center">
           <img
             src="/watermark.svg"
             alt="paradigm_book_reading_charity"
-            className="w-48 h-16 mx-auto"
+            className="w-48 h-16"
+          />
+        </div>
+        <div className="rounded p-[0rem_2.5rem] bg-[#FCF2FC] row-span-1 col-span-2 flex justify-center items-center">
+          <img
+            src="/Ujesa.svg"
+            alt="Ujesa_tribe"
+            className="w-16 h-16 rounded-[50%]"
           />
         </div>
       </div>
