@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const guests = [
-  { name: "Adeniyi Pagiel", role: "Motivator", image: "/pagiel.svg" },
+  { name: "Adeniyi Pagiel", role: "Moderator", image: "/pagiel.svg" },
   { name: "Oratio", role: "Music Artist", image: "/oratio.svg" },
   { name: "Dora", role: "Music Artist", image: "/dora.svg" },
   { name: "Oyeleke Joel", role: "Poet", image: "/joel.svg" },
@@ -23,8 +23,8 @@ const GuestSlider = () => {
 
   return (
     <div className="px-6 lg:px-16 py-10 w-full bg-[#F9F9FB]">
-      <h2 className="text-2xl lg:text-3xl font-bold mb-6">Meet Our Guests</h2>
-      <p className="text-[#62636C] mb-10">
+      <h2 className="text-2xl lg:text-3xl font-bold mb-2">Meet Our Guests</h2>
+      <p className="text-[#62636C] mb-6">
         8 incredible guest artists, poets, and creators will join us to speak,
         perform, and inspire.
       </p>
@@ -60,8 +60,12 @@ const GuestSlider = () => {
                 className="h-[300px] w-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
-                <h3 className="text-lg font-semibold text-white">{guest.name}</h3>
-                <p className="text-sm text-white">{guest.role}</p>
+                <h3 className="text-lg font-semibold text-white">
+                  {guest.name}
+                </h3>
+                <p className="text-sm text-gray-300 font-medium font-inter">
+                  {guest.role}
+                </p>
               </div>
             </div>
           </SwiperSlide>
@@ -69,35 +73,35 @@ const GuestSlider = () => {
       </Swiper>
 
       <div>
-        <div className="flex justify-end items-center mt-6 gap-2">
-            <button
-                ref={prevRef}
-                className="swiper-button-prev-custom p-2 border rounded-md hover:bg-gray-100 transition w-16 h-16"
-                aria-label="Previous"
-            >
-                <img src='/left-slide.svg' alt='left-side' />
-            </button>
-            <div className="flex justify-center mt-4 gap-2 sm:gap-1">
-                {guests.map((_, index) => (
-                <button
-                    key={index}
-                    onClick={() => swiperInstance?.slideToLoop(index)} // Loop-safe navigation
-                    className={`w-3 h-3 rounded-full ${
-                    index === activeIndex ? "bg-[#008300]" : "bg-[#CDCED7]"
-                    } transition duration-300`}
-                    aria-label={`Go to slide ${index + 1}`}
-                />
-                ))}
-            </div>
-            <button
-                ref={nextRef}
-                className="swiper-button-next-custom p-2 border rounded-md hover:bg-gray-100 transition w-16 h-16"
-                aria-label="Next"
-            >
-                <img src='/right-slide.svg' alt='left-side' />
-            </button>
+        <div className="flex justify-end items-center mt-6 gap-4">
+          <button
+            ref={prevRef}
+            className="swiper-button-prev-custom p-2 rounded-md hover:bg-gray-100 transition w-16 h-16"
+            aria-label="Previous"
+          >
+            <img src="/left-slide.svg" alt="left-side" />
+          </button>
+          <div className="flex justify-center mt-4 gap-2">
+            {guests.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => swiperInstance?.slideToLoop(index)} // Loop-safe navigation
+                className={`w-3 h-3 rounded-full ${
+                  index === activeIndex ? "bg-[#008300]" : "bg-[#CDCED7]"
+                } transition duration-300`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+          <button
+            ref={nextRef}
+            className="swiper-button-next-custom p-2 rounded-md hover:bg-gray-100 transition w-16 h-16"
+            aria-label="Next"
+          >
+            <img src="/right-slide.svg" alt="left-side" />
+          </button>
         </div>
-        </div>
+      </div>
     </div>
   );
 };
