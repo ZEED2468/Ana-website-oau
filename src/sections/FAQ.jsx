@@ -8,7 +8,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center mt-[-4rem]">
       <div className='hidden md:block relative right-[15rem]'>
         <img
           src="/vector.svg"
