@@ -69,7 +69,7 @@ const GuestSlider = () => {
       </Swiper>
 
       <div>
-        <div className="flex justify-end items-center mt-6 gap-4">
+        <div className="flex justify-end items-center mt-6 gap-2">
             <button
                 ref={prevRef}
                 className="swiper-button-prev-custom p-2 border rounded-md hover:bg-gray-100 transition w-16 h-16"
