@@ -1,6 +1,6 @@
 import React from "react";
 
-const Faq = () => {
+const FAQ = () => {
   const [active, setActive] = React.useState(null);
 
   const toggleFAQ = (id) => {
@@ -190,4 +190,4 @@ const Faq = () => {
   );
 };
 
-export default Faq;
+export default FAQ;
