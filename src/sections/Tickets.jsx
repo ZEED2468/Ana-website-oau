@@ -24,7 +24,7 @@ const Tickets = () => {
         <img
           src="/tickets.svg"
           alt="festival highlights"
-          className="block w-[35rem] md:w-full md:h-full object-cover mt-7"
+          className="block w-[35rem] md:w-full md:h-full object-cover mt-7 md:mb-12"
         />
         
       </div>

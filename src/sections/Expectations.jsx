@@ -59,7 +59,7 @@ import React from "react";
 const Expectations = () => {
   return (
     <div className="bg-[#F9F9FB] px-6 py-20 lg:px-32">
-      <div className="flex flex-col lg:flex-row justify-between items-center gap-6 text-center lg:text-left">
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-4 text-left lg:text-left">
         <h1 className="special-font font-bold text-[1.5rem] lg:text-[2.75rem]">
           What to Expect at #ANAOAU25
         </h1>
@@ -75,7 +75,7 @@ const Expectations = () => {
         </p>
       </div>
 
-      <div className="mt-12 bg-white border border-[#B9BBC6]  shadow-[8px_8px_0_0_rgba(0,0,0,0.08)] lg:shadow-[24px_24px_0_0_rgba(0,0,0,0.08)] rounded-md grid grid-cols-2 lg:grid-cols-8">
+      <div className="mt-8 bg-white border border-[#B9BBC6]  shadow-[8px_8px_0_0_rgba(0,0,0,0.08)] lg:shadow-[24px_24px_0_0_rgba(0,0,0,0.08)] rounded-md grid grid-cols-2 lg:grid-cols-8">
         <div className="border-b border-r border-[#B9BBC6] flex flex-col items-center text-center p-6">
           <img src="/book-store.svg" alt="Bookstore of the Day" className="w-10 h-12 mb-3" />
           <p className="text-[0.875rem] text-center font-medium">Bookstore of the Day</p>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Sponsors = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-between items-start p-[4.5rem_1.5rem;] lg:p[4.5rem_1.49975rem_3.5rem_2.5rem] lg:p-[6.5rem_7.49975rem_6.5rem_7.5rem] gap[2.5rem] lg:gap-[11.70363rem]">
+    <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start p-[4.5rem_1.5rem] lg:p-[6.5rem_7.5rem_6.5rem_7.5rem] gap-5 lg:gap-[11.70363rem] w-full mt-10">
       <div className="flex flex-col gap-5 flex-start items-start">
         <h1 className="text-3xl font-bold special-font lg:w-[22.8125rem]">
           Our Sponsors & Partners
@@ -21,33 +21,40 @@ const Sponsors = () => {
           </button>
         </a>
       </div>
-      <div className="grid grid-cols-4 grid-rows-3 mt-10 gap-2 lg:gap-5 w-full h-[38rem] justify-center mx-auto">
-        <div className="rounded p-[3.9375rem_0rem] bg-[#FCFCD7] col-span-2 row-span-2 flex justify-center items-center">
+
+      {/* Small Screen SVG - Horizontally stacked with a gap */}
+      <div className="flex lg:hidden flex-col justify-between gap-5 w-full">
+        <div className="flex justify-center items-center">
           <img
-            src="/bookbuzz.svg"
+            src="/sm high.svg"
             alt="bookbuzz_foundation"
-            className="w-40 h-10"
+            className="w-auto h-auto"
           />
         </div>
-        <div className="rounded p-[5.8125rem_2.8865rem_5.8125rem_2.824rem] bg-[#FCF2E8] row-span-1 col-span-2 flex justify-center items-center">
+        <div className="flex justify-center items-center">
           <img
-            src="/spur.svg"
-            alt="the_spur_hub"
-            className="w-24 h-12"
-          />
-        </div>
-        <div className="rounded p[2.6875rem_0rem] bg-[#EDFAE6] col-span-2 row-span-2 flex justify-center items-center">
-          <img
-            src="/watermark.svg"
-            alt="paradigm_book_reading_charity"
-            className="w-48 h-16"
-          />
-        </div>
-        <div className="rounded p-[0rem_2.5rem] bg-[#FCF2FC] row-span-1 col-span-2 flex justify-center items-center">
-          <img
-            src="/Ujesa.svg"
+            src="/sm low.svg"
             alt="Ujesa_tribe"
-            className="w-16 h-16 rounded-[50%]"
+            className="w-auto h-auto"
+          />
+        </div>
+      </div>
+
+      {/* Large Screen SVG - Horizontally aligned with a gap */}
+ {/* Large Screen SVG - Horizontally aligned with a gap */}
+      <div className="hidden lg:flex flex-row justify-between gap-6 w-full">
+        <div className="flex justify-center items-center">
+          <img
+            src="/big left.svg"
+            alt="bookbuzz_foundation"
+            className="w-[50rem] h-[20rem] object-contain" // Increased size for large screens
+          />
+        </div>
+        <div className="flex justify-center items-center">
+          <img
+            src="/big right.svg"
+            alt="Ujesa_tribe"
+            className="w-[50rem] h-[20rem] object-contain" // Increased size for large screens
           />
         </div>
       </div>

@@ -5,7 +5,7 @@ const Navbar = () => {
   const navLists = ["Guests", "Sponsors", "FAQ", "Contact Us"];
   return (
     <>
-      <nav className="bg-[#072422] p-5 px-2 md:px-20 lg:px-28 text-white">
+      <nav className="bg-[#072422] pt-4 pb-0 px-2 md:px-20 lg:px-28 text-white">
         <div className="flex justify-between items-center">
           <a
             href="/"

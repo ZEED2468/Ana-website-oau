@@ -12,7 +12,7 @@ const Highlights = () => {
           music, and vibrant storytelling. This year? We're going bolder.
         </p>
       </div>
-      <div className="grid grid-cols-3 p-5 gap-0">
+      <div className="grid grid-cols-3 p-5 pt-10 pl-0 pr-0 gap-0">
         <img
           src="/pic1.svg"
           alt="festival highlights"
