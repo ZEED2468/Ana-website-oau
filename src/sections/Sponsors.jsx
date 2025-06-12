@@ -32,7 +32,7 @@ const Sponsors = () => {
             className="w-auto h-auto"
           />
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-left items-left">
           <img
             src="/sm low.svg"
             alt="Ujesa_tribe"
