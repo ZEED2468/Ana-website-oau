@@ -17,7 +17,7 @@ const FAQ = () => {
         />
       </div>
       <div className="p-[2.5rem_0rem] flex flex-col justify-center items-start md:items-center gap-[2.5rem]">
-        <h1 className="special-font text-[1.5rem] lg:text-[2.75rem] text-left lg:text-center">
+        <h1 className="special-font text-[1.5rem] lg:text-[2.75rem] text-left lg:text-center ml-3">
                     FAQ
         </h1>
         <div className="w-[21.5625rem] lg:w-[28.125rem] p-[0rem_1rem] flex flex-col justify-center items-stretch lg:p-[1rem_2.5rem] bg-white border border-[#B9BBC6] shadow-[8px_8px_0_0_rgba(0,0,0,0.08)] lg:shadow-[24px_24px_0_0_rgba(0,0,0,0.08)] rounded-md">
