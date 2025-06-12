@@ -20,6 +20,12 @@ const GuestSlider = () => {
   const nextRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [swiperInstance, setSwiperInstance] = useState(null);
+  const [isNextClicked, setIsNextClicked] = useState(false);
+  const [isPrevClicked, setIsPrevClicked] = useState(false);
+  
+  // Calculate dot index based on groups of 2
+  const dotIndex = Math.floor(activeIndex / 2);
+  const totalDots = Math.ceil(guests.length / 2);
 
   return (
     <div className="px-6 lg:px-16 py-10 w-full bg-[#F9F9FB]">
@@ -76,29 +82,41 @@ const GuestSlider = () => {
         <div className="flex justify-end items-center mt-6 gap-4">
           <button
             ref={prevRef}
-            className="swiper-button-prev-custom p-2 rounded-md hover:bg-gray-100 transition w-16 h-16"
+            onClick={() => {
+              setIsPrevClicked(true);
+              setTimeout(() => setIsPrevClicked(false), 150);
+            }}
+            className={`swiper-button-prev-custom p-2 rounded-md hover:bg-gray-100 transition-all duration-150 w-16 h-16 ${
+              isPrevClicked ? 'transform scale-95 bg-gray-200' : ''
+            }`}
             aria-label="Previous"
           >
             <img src="/left-slide.svg" alt="left-side" />
           </button>
           <div className="flex justify-center mt-4 gap-2">
-             {Array.from({ length: 4 }).map((_, index) => (
+            {Array.from({ length: totalDots }).map((_, index) => (
               <button
                 key={index}
-                onClick={() => swiperInstance?.slideToLoop(index)} // Loop-safe navigation
+                onClick={() => swiperInstance?.slideToLoop(index * 2)}
                 className={`w-3 h-3 rounded-full ${
-                  index === activeIndex ? "bg-[#008300]" : "bg-[#CDCED7]"
-                } transition duration-300`}
-                aria-label={`Go to slide ${index + 1}`}
+                  index === dotIndex ? "bg-[#008300]" : "bg-[#CDCED7]"
+                } transition duration-300 hover:scale-110`}
+                aria-label={`Go to slide group ${index + 1}`}
               />
             ))}
           </div>
           <button
             ref={nextRef}
-            className="swiper-button-next-custom p-2 rounded-md hover:bg-gray-100 transition w-16 h-16"
+            onClick={() => {
+              setIsNextClicked(true);
+              setTimeout(() => setIsNextClicked(false), 150);
+            }}
+            className={`swiper-button-next-custom p-2 rounded-md hover:bg-gray-100 transition-all duration-150 w-16 h-16 ${
+              isNextClicked ? 'transform scale-95 bg-gray-200' : ''
+            }`}
             aria-label="Next"
           >
-            <img src="/right-slide.svg" alt="left-side" />
+            <img src="/right-slide.svg" alt="right-side" />
           </button>
         </div>
       </div>

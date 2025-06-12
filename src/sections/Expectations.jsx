@@ -59,7 +59,7 @@ import React from "react";
 const Expectations = () => {
   return (
     <div className="bg-[#F9F9FB] px-6 py-20 lg:px-32">
-      <div className="flex flex-col lg:flex-row justify-between items-center gap-4 text-left lg:text-left">
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-6 text-left lg:text-left">
         <h1 className="special-font font-bold text-[1.5rem] lg:text-[2.75rem]">
           What to Expect at #ANAOAU25
         </h1>

@@ -16,14 +16,14 @@ const FAQ = () => {
           className="w-full h-[20rem] md:h-[30rem] object-cover"
         />
       </div>
-      <div className="p-[4.5rem_0.5rem] flex flex-col justify-center items-start md:items-center gap-[2.5rem]">
+      <div className="p-[2.5rem_1rem] flex flex-col justify-center items-start md:items-center gap-[2.5rem]">
         <h1 className="special-font text-[1.5rem] lg:text-[2.75rem] text-left lg:text-center">
-          FAQ
+                    FAQ
         </h1>
         <div className="w-[21.5625rem] lg:w-[28.125rem] p-[0rem_1rem] flex flex-col justify-center items-stretch lg:p-[1rem_2.5rem] bg-white border border-[#B9BBC6] shadow-[8px_8px_0_0_rgba(0,0,0,0.08)] lg:shadow-[24px_24px_0_0_rgba(0,0,0,0.08)] rounded-md">
           <div
             onClick={() => toggleFAQ("ANA-OAU")}
-            className="p-[1.5rem_0rem] flex flex-col justify-center items-start gap-[0.25rem] border-b-2 border-[#e7e8ec]"
+            className="p-[1.5rem_0.5rem] flex flex-col justify-center items-start gap-[0.25rem] border-b-2 border-[#e7e8ec]"
           >
             <div className="flex justify-between items-center w-full cursor-pointer">
               <p
