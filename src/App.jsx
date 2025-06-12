@@ -17,15 +17,22 @@ const App = () => {
       <Hero />
       <Highlights />
       <Expectations />
-      <Guests />
-      <Sponsors />
-      <FAQ />
+      <section id="guests">
+        <Guests />
+      </section>
+      <section id="sponsors">
+        <Sponsors />
+      </section>
+      <section id="faq">
+        <FAQ />
+      </section>
       <BookStand />
       <Tickets />
-      <Footer />
+      <section id="contact">
+        <Footer />
+      </section>
     </>
   )
 }
-
 
 export default App;

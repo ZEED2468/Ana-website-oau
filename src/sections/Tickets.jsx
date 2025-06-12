@@ -11,7 +11,7 @@ const Tickets = () => {
           Come enjoy performances, poetry, giveaways and more.
         </p>
         <a
-            href="https://anaoau.org/book-festival"
+            href="https://tix.africa/discover/anaoaufest/checkout?step=tickets"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -2,7 +2,26 @@ import React from "react";
 
 const Navbar = () => {
   const [menu, setMenu] = React.useState(true);
-  const navLists = ["Guests", "Sponsors", "FAQ", "Contact Us"];
+  
+  const navLists = [
+    { name: "Guests", id: "guests" },
+    { name: "Sponsors", id: "sponsors" },
+    { name: "FAQ", id: "faq" },
+    { name: "Contact Us", id: "contact" }
+  ];
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+      // Close mobile menu after clicking
+      setMenu(true);
+    }
+  };
+
   return (
     <>
       <nav className="bg-[#072422] pt-4 pb-0 px-2 md:px-20 lg:px-28 text-white">
@@ -54,9 +73,10 @@ const Navbar = () => {
                     key={index}
                     className={`${
                       menu ? "text-white" : "text-black mt-6"
-                    } special-font`}
+                    } special-font cursor-pointer hover:text-green-400 transition-colors duration-300`}
+                    onClick={() => scrollToSection(item.id)}
                   >
-                    {item}
+                    {item.name}
                   </li>
                 );
               })}

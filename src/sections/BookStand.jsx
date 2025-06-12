@@ -11,9 +11,7 @@ const BookStand = () => {
           Have something to sell or showcase? Join the marketplace of creativity.
         </p>
         <a
-          href="https://anaoau.org/book-festival"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="https://wa.me/2348152760532?text=I%20want%20to%20partner%20with%20ANA-OAU%20for%20their%202025%20festival"
           className="mt-2 mb-8 lg:mb-0"
         >
           <button className="bg-[#2D93D0] lg:bg-[#3D63DD] text-white p-[0.5rem_1.5rem] lg:p-[0.5rem_1.5rem] border-2 border-[#000000] rounded my-4 transition duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">

@@ -28,26 +28,46 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex justify-center items-center gap-4">
-            <div className="w-12 h-12 md:w-[4rem] md:h-[4rem] object-contain bg-[#051A17] rounded-full flex justify-center items-center p[1.2rem]">
-              <img src="/instagram.svg" alt="ana-logo" />
-            </div>
-            <div className="w-12 h-12 md:w-[4rem] md:h-[4rem] object-contain bg-[#051A17] rounded-full flex justify-center items-center">
-              <img src="/twitter.svg" alt="ana-logo" />
-            </div>
-            <div className="w-12 h-12 md:w-[4rem] md:h-[4rem] object-contain bg-[#051A17] rounded-full flex justify-center items-center">
-              <img src="/whatsapp.svg" alt="ana-logo" />
-            </div>
+            <a
+              href="https://www.instagram.com/ana_oauchapter?igsh=eHd5NnN1bTl4YnRt"
+              className="w-12 h-12 md:w-[4rem] md:h-[4rem] object-contain bg-[#051A17] rounded-full flex justify-center items-center p[1.2rem] hover:bg-[#072422] transition-colors duration-300"
+            >
+              <img src="/instagram.svg" alt="Instagram" />
+            </a>
+            <a
+              href="https://x.com/_oau_ana"
+              className="w-12 h-12 md:w-[4rem] md:h-[4rem] object-contain bg-[#051A17] rounded-full flex justify-center items-center hover:bg-[#072422] transition-colors duration-300"
+            >
+              <img src="/twitter.svg" alt="Twitter" />
+            </a>
+            <a
+              href="https://wa.me/2348152760532?text=I'm%20reaching%20out%20to%20make%20enquiries%20about%20ANA-OAU."
+              className="w-12 h-12 md:w-[4rem] md:h-[4rem] object-contain bg-[#051A17] rounded-full flex justify-center items-center hover:bg-[#072422] transition-colors duration-300"
+            >
+              <img src="/whatsapp.svg" alt="WhatsApp" />
+            </a>
           </div>
         </div>
       </div>
       <div className="block md:hidden">
         <img src="/booc-pic.svg" alt="booc-logo" />
       </div>
-      <div className="flex items-center justify-between gap-4 lg:w-[49.375rem]">
-        <p className="text-white flex flex-col justify-start items-start special-font">
-          💚 <span>Designed by</span>{" "}
-          <span className="underline">Desire Destiny.</span>
-        </p>
+      <div className="flex items-center justify-between gap-4 lg:w-[49.375rem] relative z-10">
+        <div className="text-white flex flex-col justify-start items-start special-font">
+          <span>💚 Designed by</span>
+          <a
+            href="https://www.behance.net/desiredestiny"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-green-400 transition-colors duration-300 cursor-pointer relative z-20"
+            onClick={(e) => {
+              e.stopPropagation();
+              window.open('https://www.behance.net/desiredestiny', '_blank');
+            }}
+          >
+            Desire Destiny.
+          </a>
+        </div>
         <div className="hidden md:block">
           <img src="/booc-pic.svg" alt="booc-logo" />
         </div>
