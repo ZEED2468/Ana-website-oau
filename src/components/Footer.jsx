@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-[#072422] flex flex-col items-stretch justify-between gap-[4rem] md:gap-[8.25rem] p-[2rem] md:p-28 pt-[10rem]">
+    <div className="bg-[#072422] flex flex-col items-stretch justify-between gap-[4rem] md:gap-[8.25rem] p-[2rem] md:p-28 pt-[10rem] pb-[3rem]">
       <div>
         <div className="flex flex-col md:flex-row justify-between items-start gap-5 md:gap-0">
           <div className="flex flex-col gap-[1.5rem] text-[11.23px] md:text-base special-font text-white">
@@ -72,7 +72,7 @@ const Footer = () => {
           <img src="/booc-pic.svg" alt="booc-logo" />
         </div>
       </div>
-      <div className="relative w-90% h-64 mt-[-16rem] mb-1 ml-10">
+      <div className="relative w-90% h-64 mt-[-10rem] ">
         <img
           src="/water-paint.svg"
           alt="ana-logo"
