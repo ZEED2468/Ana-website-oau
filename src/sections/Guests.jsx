@@ -82,7 +82,7 @@ const GuestSlider = () => {
             <img src="/left-slide.svg" alt="left-side" />
           </button>
           <div className="flex justify-center mt-4 gap-2">
-            {guests.map((_, index) => (
+             {Array.from({ length: 4 }).map((_, index) => (
               <button
                 key={index}
                 onClick={() => swiperInstance?.slideToLoop(index)} // Loop-safe navigation

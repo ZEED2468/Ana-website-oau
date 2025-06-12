@@ -235,7 +235,7 @@ const Hero = () => {
           <img
             src="/Ticket 16.svg"
             alt="hero-bg"
-            className="w-48 h-[180px] object-cover" // Maintain aspect ratio
+            className="w-48 h-[160px] object-cover" // Maintain aspect ratio
           />
         </div>
       </div>
@@ -306,7 +306,7 @@ const Hero = () => {
           <img
             src="/Ticket 14.svg"
             alt="hero-bg"
-            className="w-48 h-[220px] object-cover" // Maintain aspect ratio
+            className="w-48 h-auto object-cover" // Maintain aspect ratio
           />
         </div>
       </div>
